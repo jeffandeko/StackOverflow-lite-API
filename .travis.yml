@@ -1,6 +1,5 @@
 language: python
 python:
-- "3.7"
 - "3.7-dev"  # 3.7 development branch
 # This command to install dependencies
 install:

@@ -1,10 +1,9 @@
 
-![Depfu](https://img.shields.io/depfu/depfu/example-ruby.svg) [![Build Status](https://travis-ci.org/jeffandeko/stackoverflow-lite-api.svg?branch=develop)](https://travis-ci.org/jeffandeko/stackoverflow-lite-api) ![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/Django.svg) ![Depfu](https://img.shields.io/depfu/depfu/example-ruby.svg)
 
-
+![Coverity Code Advisor On Demand Stream Badge](https://img.shields.io/coverity/ondemand/streams/STREAM.svg?style=popout) [![Build Status](https://travis-ci.org/jeffandeko/stackoverflow-lite-api.svg?branch=develop)](https://travis-ci.org/jeffandeko/stackoverflow-lite-api) ![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/Django.svg) ![Depfu](https://img.shields.io/depfu/depfu/example-ruby.svg)
 
 # stackoverflow-lite-api
-# what?
+# what does the api do?
 Users can create an account and log in.
 Users can post questions.
 Users can delete the questions they post.

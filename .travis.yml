@@ -1,0 +1,16 @@
+language: python
+python:
+- "3.7-dev"  # 3.7 development branch
+# This command to install dependencies
+install:
+- pip install -r requirements.txt
+- pip install coverage
+# This command to run tests
+script:
+- pytest
+# This  command returns the coverage and let's coveralls know the coverage percent.
+after_script:
+- coveralls
+# The command Uses codecov to get coverage
+after_success:
+- codecov

@@ -2,9 +2,9 @@ import json
 import unittest
 
 from alembic.testing.config import db
-from app.api.v1.stack_question import ns as questions_namespace
 
 from app.api.v1 import api
+from app.api.v1.stack_questions import ns as questions_namespace
 from app.api.v1.stack_user import ns as users_namespace
 from config import create_app
 
@@ -60,8 +60,8 @@ class StackTestCase(unittest.TestCase):
         data = json.loads(response.get_data())
         self.assertEqual(data['stack_question']['value'], 30)
 
-    def test_update_error(self):
-        """ you cannot edit non-existing question"""
+    def test_update_on_non_existing_question(self):
+        """ you cannot edit non_existing question"""
         stack_question = {"value": 30}
         response = self.app.put(self.endpoint, data=json.dumps(stack_question), content_type='application/json')
         self.assertEqual(response.status_code, 'you cannot edit non existing question', 404)
@@ -69,8 +69,8 @@ class StackTestCase(unittest.TestCase):
         response = self.app.put(self.endpoint, data=json.dumps(stack_question), content_type='application/json')
         self.assertEqual(response.status_code, 400)
 
-    def test_delete(self):
-        response = self.app.delete(self.endpoint)
+    def test_delete_questions(self):
+        response = self.app.delete(self.endpoint, )
         self.assertEqual(response.status_code, 204)
         response = self.app.delete(self.endpoint)
         self.assertEqual(response.status_code, 404)

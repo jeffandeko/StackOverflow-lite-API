@@ -2,3 +2,4 @@ alembic
 automium_web
 Flask-API.yandex
 flask
+flask-restplus>=0.11

@@ -1,7 +1,5 @@
 import logging
 
-from flask_restplus import Resource
-
 from app.api.v1 import api
 from app.api.v1.serializers import stack_user
 from app.stack_user.models import StackUser
@@ -14,7 +12,7 @@ UserMaker = StackUser(api)
 
 
 @ns.route('/')
-class UsersList(Resource):
+class UsersList:
     """Shows a list of all users, and lets you POST to add new user"""
 
     @ns.doc('list_users')

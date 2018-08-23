@@ -1,4 +1,4 @@
-class StackQuestion:
+class Question:
     def __init__(self, api):
         self.api = api
         self.questions = [
